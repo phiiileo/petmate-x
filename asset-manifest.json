@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/petmate-x/static/css/main.f312ce77.chunk.css",
+    "main.js": "/petmate-x/static/js/main.c2c4cb7f.chunk.js",
+    "main.js.map": "/petmate-x/static/js/main.c2c4cb7f.chunk.js.map",
+    "runtime-main.js": "/petmate-x/static/js/runtime-main.c776a8b0.js",
+    "runtime-main.js.map": "/petmate-x/static/js/runtime-main.c776a8b0.js.map",
+    "static/js/2.b9eb801d.chunk.js": "/petmate-x/static/js/2.b9eb801d.chunk.js",
+    "static/js/2.b9eb801d.chunk.js.map": "/petmate-x/static/js/2.b9eb801d.chunk.js.map",
+    "index.html": "/petmate-x/index.html",
+    "precache-manifest.799e4fb7c01c160a61b994411d764939.js": "/petmate-x/precache-manifest.799e4fb7c01c160a61b994411d764939.js",
+    "service-worker.js": "/petmate-x/service-worker.js",
+    "static/css/main.f312ce77.chunk.css.map": "/petmate-x/static/css/main.f312ce77.chunk.css.map",
+    "static/js/2.b9eb801d.chunk.js.LICENSE": "/petmate-x/static/js/2.b9eb801d.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c776a8b0.js",
+    "static/js/2.b9eb801d.chunk.js",
+    "static/css/main.f312ce77.chunk.css",
+    "static/js/main.c2c4cb7f.chunk.js"
+  ]
+}
