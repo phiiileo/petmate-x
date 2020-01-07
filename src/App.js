@@ -3,12 +3,13 @@ import './sass/App.scss';
 import Header from "./petMate/Header";
 import HomepageIntro from "./petMate/HomepageIntro";
 import HomepagePets from "./petMate/HomepagePets";
+import petData from "./petMate/PetData";
 
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      name: "Phileo"
+      petData,
     }
   }
   render() {
@@ -16,7 +17,7 @@ class App extends React.Component {
       <div className="App">
         <Header />
         <HomepageIntro />
-        <HomepagePets />
+        <HomepagePets details={this.state.petData} />
       </div>
     );
   }
