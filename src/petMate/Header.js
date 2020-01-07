@@ -1,6 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import '../sass/fragments/header.scss';
-
 
 export default function Header() {
     const toggleMenu = () => {
@@ -11,7 +11,7 @@ export default function Header() {
 
         } else {
             nav.style.visibility = "visible";
-            nav.style.height = "120px"
+            nav.style.height = "200px";
         }
 
     }
@@ -23,15 +23,17 @@ export default function Header() {
                 <div className="stick"></div>
                 <div className="stick"></div>
             </div>
-            <span className="logo"><i className="fa fa-paw"> </i><a > PetMate</a>
+            <span className="logo"><i className="fa fa-paw"> </i><Link to="/" > PetMate</Link>
             </span>
             <span className="search">
                 <i className="fa fa-search"></i>
             </span>
             <nav id="nav">
-                <a >Policy</a>
-                <a >About Us</a>
-                <a >Contact us</a>
+                <Link to="/policy">Policy</Link>
+                <Link to="/about-us">About Us</Link>
+                <Link to="/contact-us">Contact Us</Link>
+                <Link to="/sign-in">Sign In</Link>
+                <Link to="/register">Register</Link>
             </nav>
 
         </header>
