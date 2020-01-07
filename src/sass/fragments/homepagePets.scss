@@ -1,9 +1,9 @@
-@import './config';
+@import "./config";
 .pets {
   padding: 20px 0;
   color: $brand_color;
 
-.mobile {
+  .mobile {
     margin: 5px 0 20px 0;
     padding: 0 20px;
     h3 {
@@ -25,8 +25,15 @@
       float: right;
       margin-bottom: 10px;
     }
-  }  .desktop {
+  }
+  .desktop {
     display: none;
+  }
+
+  .petList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .more {
     background-color: $brand_color;
@@ -44,16 +51,17 @@
 }
 
 @media screen and (min-width: 760px) {
-    .pets {
-        padding: 20px 7%;
+  .pets {
+    padding: 20px 7%;
 
-        .mobile{
-            display: none;
-        }
-        .desktop{
-            display: block;
-            font-size: 30px;
-            line-height: 59px;
-        }
+    .mobile {
+      display: none;
     }
+    .desktop {
+      display: block;
+      font-size: 30px;
+      line-height: 59px;
+      text-align: center;
+    }
+  }
 }

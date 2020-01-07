@@ -3,9 +3,22 @@ import '../sass/fragments/header.scss';
 
 
 export default function Header() {
+    const toggleMenu = () => {
+        let nav = document.querySelector("#nav");
+        if (nav.style.visibility === "visible") {
+            nav.style.visibility = "hidden";
+            nav.style.height = "0"
+
+        } else {
+            nav.style.visibility = "visible";
+            nav.style.height = "120px"
+        }
+
+    }
+
     return (
         <header>
-            <div id="navButton">
+            <div id="navButton" onClick={toggleMenu}>
                 <div className="stick"></div>
                 <div className="stick"></div>
                 <div className="stick"></div>

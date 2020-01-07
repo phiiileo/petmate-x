@@ -22,8 +22,10 @@ export default class HomePagePets extends React.Component {
                     <a>All pets</a>
                 </div>
                 <h3 className="desktop">Ready to mate pets?</h3>
+                <div className="petList">
+                    {pets}
+                </div>
 
-                {pets}
 
                 <button className="more">More</button>
             </section>

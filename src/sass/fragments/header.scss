@@ -38,8 +38,12 @@ header {
     }
   }
   nav {
-    display: none;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    appearance: none;
     padding-top: 20px;
+    transition: height 1s ease-in-out;
 
     a {
       color: $brand_color;
@@ -66,7 +70,8 @@ header {
     }
 
     #nav {
-      display: block;
+      height: auto;
+      visibility: visible;
       float: right;
       padding-top: 10px;
 
