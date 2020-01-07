@@ -1,0 +1,88 @@
+@import "./config.scss";
+main {
+  .row {
+    background-image: url("https://res.cloudinary.com/ebugo/image/upload/v1577224203/petmate/h21kyds8vcas10sarmk5.jpg");
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    .container {
+      background-color: rgba(0, 0, 0, 0.815);
+      color: white;
+      padding: 20px 7%;
+
+      h3 {
+        font-weight: bold;
+        font-size: 50px;
+        margin: 20px 0;
+      }
+      p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+      }
+      h4 {
+        width: 100%;
+        font-weight: 600;
+        font-size: 25px;
+        margin-top: 20px;
+      }
+
+      p.link {
+        text-align: center;
+        margin-top: 30px;
+        position: relative;
+        img {
+          display: none;
+        }
+        a {
+          background-color: $brand_color;
+          color: white;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 27px;
+          border-radius: 5px;
+          padding: 10px 0px;
+          margin: 0 auto;
+          display: inline-block;
+          width: 120px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 760px) {
+    main {
+        .row {
+            width: 100%;
+            text-align: left;
+            .container {
+                padding-right: 50%;
+            }
+            h3 {
+              font-size: 100px ;
+            }
+            p {
+              font-size: 29px  ;
+              line-height: 50px  ;
+            }
+            h4 {
+              width: 500px  ;
+              text-align: center;
+              font-size: 40px  ;
+            }
+            p.link {
+              img {
+                display: block  ;
+                position: absolute;
+                top: -50px;
+                left: 40px;
+              }
+              a {
+                margin-left: -33%  ;
+              }
+            }
+          }
+        
+    }
+}
