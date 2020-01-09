@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
-import "../../sass/fragments/sign_in.scss"
+import { Link/*, useHistory*/ } from 'react-router-dom';
+import "../../sass/fragments/sign_in.scss";
+
 export default class Sign_In extends Component {
     constructor() {
         super();
@@ -9,11 +10,14 @@ export default class Sign_In extends Component {
             password: "",
             u_name: "phileo",
             pass: "111111",
-            x: ""
+            x: "",
         }
     }
 
     handleSubmit = (e) => {
+        // const history = useHistory();
+        // history.push("/")
+        localStorage.setItem("name", this.state.username);
         let test = this.state.username === "" || this.state.username === ""
         if (test) {
 
@@ -43,30 +47,30 @@ export default class Sign_In extends Component {
                 <div className="form_group">
                     <label>Username: </label>
                     <span>
-                    <input
-                        type="username"
-                        placeholder="Enter your username"
-                        name="username"
-                        value={this.state.username}
-                        onChange={this.handleChange}
-                        required
-                    />
-                    <i className="fa fa-user"></i>
+                        <input
+                            type="username"
+                            placeholder="Enter your username"
+                            name="username"
+                            value={this.state.username}
+                            onChange={this.handleChange}
+                            required
+                        />
+                        <i className="fa fa-user"></i>
                     </span>
                 </div>
 
                 <div className="form_group">
                     <label>Password: </label>
                     <span>
-                    <input
-                        type="password"
-                        placeholder="Enter your password"
-                        name="password"
-                        value={this.state.password}
-                        onChange={this.handleChange}
-                        required
-                    />
-                    <i className="fa fa-lock"></i>
+                        <input
+                            type="password"
+                            placeholder="Enter your password"
+                            name="password"
+                            value={this.state.password}
+                            onChange={this.handleChange}
+                            required
+                        />
+                        <i className="fa fa-lock"></i>
                     </span>
                 </div>
 

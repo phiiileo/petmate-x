@@ -9,6 +9,7 @@ export default class Register extends Component {
             email: "",
             username: "",
             password: "",
+            Cpassword: "",
         }
     }
 
@@ -91,6 +92,21 @@ export default class Register extends Component {
                             placeholder="Enter your password"
                             name="password"
                             value={this.state.password}
+                            onChange={this.handleChange}
+                            required
+                        />
+                        <i className="fa fa-lock"></i>
+                    </span>
+                </div>
+
+                <div className="form_group">
+                    <label>Confirm Password: </label>
+                    <span>
+                        <input
+                            type="password"
+                            placeholder="Enter your password again"
+                            name="Cpassword"
+                            value={this.state.Cpassword}
                             onChange={this.handleChange}
                             required
                         />

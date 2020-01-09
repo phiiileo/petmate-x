@@ -9,6 +9,8 @@ export default class PetList extends Component {
             PetData,
         }
     }
+
+    
     render() {
        let pets = this.state.PetData.map(value =>{
            return <PetDetails key={value.id} details ={value}/>

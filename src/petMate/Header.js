@@ -29,11 +29,11 @@ export default function Header() {
                 <i className="fa fa-search"></i>
             </span>
             <nav id="nav">
+                <Link to="/petmate-x">Home</Link>
                 <Link to="/policy">Policy</Link>
                 <Link to="/about-us">About Us</Link>
                 <Link to="/contact-us">Contact Us</Link>
                 <Link to="/sign-in">Sign In</Link>
-                <Link to="/register">Register</Link>
             </nav>
 
         </header>

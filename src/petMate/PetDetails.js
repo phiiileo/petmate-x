@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 import '../sass/fragments/petDetails.scss';
 
 export default function PetDetails(props) {
@@ -10,6 +11,7 @@ export default function PetDetails(props) {
                 <h5 className="pet_name">{props.details.petName}</h5>
                 <p className="pet-breed">{props.details.petBreed} </p>
                 <span><i className="fa fa-map-marker"></i> <span className="pet_location">{props.details.petLocation}</span></span>
+                <button className="view"  onClick={props.handleClick}><Link to="/current-pet" id={props.details.id}>View</Link></button>
             </div>
         </article>
     )

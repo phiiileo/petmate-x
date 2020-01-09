@@ -35,6 +35,19 @@ article {
       font-weight: 500;
       font-size: 20px;
     }
+
+    button {
+      display: block;
+      margin: 10px auto;
+      border: none;
+      padding: 0px 0;
+      background-color: $brand_color;
+
+      a{
+        color: white;
+        padding: 30px;
+      }
+    }
   }
 }
 
