@@ -24,6 +24,12 @@ class App extends React.Component {
       <Router>
         <div className="App">
           <Header />
+          <Route exact path="/petmate-x" render={props => (
+            <React.Fragment>
+              <HomepageIntro />
+              <HomepagePets details={this.state.petData} />
+            </React.Fragment>
+          )} />
           <Route exact path="/" render={props => (
             <React.Fragment>
               <HomepageIntro />

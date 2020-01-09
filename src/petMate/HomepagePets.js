@@ -16,7 +16,7 @@ export default class HomePagePets extends React.Component {
                 <div className="mobile">
                     <h3>AVAILABLE FOR MATING</h3>
                     <p>(based on your location)</p>
-                    <Link to="pet-list">All pets</Link>
+                    <Link to="/petmate-x/pet-list">All pets</Link>
                 </div>
                 <h3 className="desktop">Ready to mate pets?</h3>
                 <div className="petList">
@@ -24,7 +24,7 @@ export default class HomePagePets extends React.Component {
                 </div>
 
 
-                <button className="more"><Link to="/pet-list">More</Link></button>
+                <button className="more"><Link to="/petmate-x/pet-list">More</Link></button>
             </section>
         )
     }
