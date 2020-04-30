@@ -12,6 +12,7 @@ import PetList from './petMate/Pages/PetList';
 import Sign_In from './petMate/Pages/Sign_In';
 import Register from './petMate/Pages/Register';
 import CurrentPet from './petMate/Pages/Current-pet';
+import LandingPage from './Components/LandingPage/LandingPage';
 
 class App extends React.Component {
   constructor() {
@@ -25,16 +26,11 @@ class App extends React.Component {
       <Router>
         <div className="App">
           <Header />
+          <Route exact path="/" component={LandingPage} />
           <Route exact path="/petmate-x" render={props => (
             <React.Fragment>
               <HomepageIntro />
               <HomepagePets details={this.state.petData} />
-            </React.Fragment>
-          )} />
-          <Route exact path="/" render={props => (
-            <React.Fragment>
-              <HomepageIntro />
-              <HomepagePets details={this.state.petData}/>
             </React.Fragment>
           )} />
           <Route path="/policy" component={Policy} />
